@@ -20,7 +20,6 @@ def validate_password(password, confirm_password):
         return False
     return True
 
-#class datasystem Implemented by Khoo Chee Guo (99406)
 class Datasystem:
     def __init__(self):
         self.profiledata = []
@@ -231,7 +230,8 @@ class Datasystem:
             transportation_cost = (Report.BASE_COST_PER_KM * distance) + (Report.COST_PER_KG * supplies_weight)
             print(f"- Transportation Cost: ${transportation_cost:.2f}")
             print()  # Print a newline for better readability
-#class Authority Implemented by Nurlina Liyana Binti Mohd Nasir (100581)         
+
+
 class Authority:
     def __init__(self, username, password, email, organization_name, type="Authority"):
         self.username = username
@@ -301,7 +301,6 @@ class Authority:
         else:
             print("No report available to view. Please ask the Admin to generate a report.")
 
-#class volunteer Implemented by NUR' INSYIRAH BINTI SUHAIMI(100516)      
 class Volunteer:
     def __init__(self, username, password, email, skills, type="Volunteer"):
         self.username = username
@@ -431,7 +430,6 @@ class Volunteer:
         else:
             print("No report available to view. Please ask the Admin to generate a report.")
 
-#class Admin Implemented by Tan Boon Sang(101173)
 class Admin(Datasystem):
     def __init__(self, username="admin", password="user12#", type="Admin"):
         super().__init__()
@@ -531,7 +529,6 @@ class Admin(Datasystem):
         print("Reports generated successfully.")
         pause()
 
-#class Report Implemented by Tan Boon Sang(101173)
 class Report:
     BASE_COST_PER_KM = 7
     COST_PER_KG = 8
@@ -550,7 +547,6 @@ class Report:
         print(f"- Total Weight of Supplies: {supplies_weight} kg")
         print(f"- Transportation Cost: ${transportation_cost:.2f}")
 
-#class FloodAffected Implemented by Khoo Chee Guo (99406) 
 class FloodAffected:
     def __init__(self):
         self.flood_areas = []
@@ -713,7 +709,6 @@ class FloodAffected:
             else:
                 print("Invalid choice. Please select a valid option.")
 
-#class SupplyManagement Implemented by NORARIZAT BIN REJAL(100185)
 class SupplyManagement:
     def __init__(self):
         self.supplies = []
